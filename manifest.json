@@ -1,0 +1,9 @@
+{
+    "name": "CONAPROF",
+    "short_name": "CONAPROF",
+    "theme_color": "#ffab40",
+    "background_color": "#ffab40",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/"
+  }
