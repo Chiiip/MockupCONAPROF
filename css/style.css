@@ -1,0 +1,201 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 400px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.title {
+  color: #004cff;
+}
+
+.salvador {
+  font-size: 6.0rem;
+  margin: 50px 0;
+  text-align: center;
+  font-family: Bungee;
+}
+
+@media only screen and (max-width : 600px) {
+  .salvador {
+    font-size: 3.5rem !important;
+  }
+}
+
+@media only screen and (max-width : 300px) {
+  .salvador {
+    font-size: 2.5rem !important;
+  }
+}
+
+.m4-custom {
+  width: 33.3333333333%;
+  margin-left: auto;
+  right: auto;
+  left: auto;
+}
+
+@media only screen and (max-width : 800px) {
+  .m4-custom {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+}
+
+
+.letra-s {
+  color: #004cff;
+}
+
+.letra-a {
+  color: #f44336;
+}
+
+.letra-l {
+  color: #ad1457;
+}
+
+.letra-v {
+  color: #66bb6a;
+}
+
+.letra-a-2 {
+  color: #ffa000;
+}
+
+.letra-d {
+  color: #795548;
+}
+
+.letra-o {
+  color: #1b5e20;
+}
+
+.letra-r {
+  color: #4a148c;
+}
+
+.nomeConaprof {
+  text-align: center;
+  margin: auto;
+}
+
+.textoConaprof {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.crete {
+  font-family: CreteRound;
+}
+
+.divNumeros {
+  font-size: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.about {
+  background-image: linear-gradient(orange, #ffab91);
+}
+
+.card-info {
+  padding-top: 0;
+  position: unset;
+  width: 100%;
+}
+
+.row-card-info {
+  display: flex;
+  justify-content: center;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.card-title {
+  font-size: 2rem !important;
+  padding-bottom: 30px;
+}
+
+.texto-card {
+  text-align: justify;
+}
+
+.parceiros {
+  margin-bottom: 70px;
+  margin-top: -30px;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'CreteRound';
+  src: url('../fonts/CreteRound-Regular.otf');
+  /* - Copyright TypeTogether. Licensed under SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+     - See license text at https://www.fontsquirrel.com/license/crete-round */
+}
+
+@font-face {
+  font-family: 'Bungee';
+  src: url('../fonts/Bungee-Regular.otf');
+  /* - Copyright The Bungee Project Authors. Licensed under SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+     - See license text at https://www.fontsquirrel.com/license/bungee */
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-R.ttf');
+  /* - Copyright Dalton Maag Ltd. Licensed under SIL OPEN FONT LICENSE Version 1.0
+     - See license text at https://www.fontsquirrel.com/license/ubuntu */
+}
