@@ -178,6 +178,15 @@ footer.page-footer {
   margin-top: -30px;
 }
 
+.form-email-conaprof input {
+  font-size: 20px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 /* Fonts */
 @font-face {
   font-family: 'CreteRound';

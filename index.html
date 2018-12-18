@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#ffab40">
-	<meta name="description" content="Um esboço para uma aplicação para a CONAPROF">
+    <meta name="description" content="Um esboço para uma aplicação para a CONAPROF">
     <title>CONAPROF</title>
 
     <!-- CSS  -->
@@ -15,6 +15,30 @@
 </head>
 
 <body>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <form class="form-email-conaprof" action="<https://us-central1-conaprof-a5ea1.cloudfunctions.net/enviarEmail>"
+                method="post">
+                <div class="input-field validate">
+                    <input id="text-nome" type="text" name="nome">
+                    <label for="text-nome">Nome</label>
+                </div>
+
+                <div class="input-field validate">
+                    <input id="text-email" type="text" name="email">
+                    <label for="text-email">E-mail</label>
+                </div>
+
+                <div class="input-field validate">
+                    <textarea id="text-corpo" class="materialize-textarea" name="corpo"></textarea>
+                    <label for="text-corpo">Digite a sua mensagem</label>
+                </div>
+                <div class="button-wrapper">
+                    <button class="btn-large waves-effect waves-light indigo lighten-1 btn botao-enviar-email" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <nav class="orange accent-2" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="#" class="brand-logo">Logo CONAPROF</a>
@@ -49,7 +73,7 @@
                     <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
                 </div>
                 <div class="row center animated bounceInDown delay-1s">
-                    <a href="" id="download-button" class="btn-large waves-effect waves-light indigo lighten-1">Increva-se
+                    <a id="download-button" href="#modal1" class="btn-large waves-effect waves-light indigo lighten-1 btn modal-trigger">Increva-se
                         aqui</a>
                 </div>
                 <br><br>
@@ -84,8 +108,8 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <div class="row center">
-                        <h2 class="parceiros">Parceiros</h2>
-                        <a href="https://kaplan.com/"><img src="images/logo kaplan.png" alt="Kaplan"></a>
+                    <h2 class="parceiros">Parceiros</h2>
+                    <a href="https://kaplan.com/"><img src="images/logo kaplan.png" alt="Kaplan"></a>
                 </div>
             </div>
         </div>
@@ -135,11 +159,13 @@
                     <div class="card deep-orange">
                         <div class="card-content white-text">
                             <span class="card-title text-center">Possui alguma dúvida?</span>
-                            <p class="texto-card">Entre em contato conosco e poderemos tirar todas as suas dúvidas! 
-                                Baseado nas suas preferências e necessidades, iremos indicar o melhor programa de intercâmbio que se ajusta ao seu perfil.</p>
+                            <p class="texto-card">Entre em contato conosco e poderemos tirar todas as suas dúvidas!
+                                Baseado nas suas preferências e necessidades, iremos indicar o melhor programa de
+                                intercâmbio que se ajusta ao seu perfil.</p>
                         </div>
                         <div class="card-action text-center">
-                                <a href="" id="download-button" class="btn-large waves-effect waves-light indigo lighten-1">Tire suas dúvidas</a>
+                            <a data-target="modal1" id="download-button" class="btn-large waves-effect waves-light indigo lighten-1">Tire
+                                suas dúvidas</a>
                         </div>
                     </div>
                 </div>
@@ -147,6 +173,7 @@
         </div>
         <div class="parallax"><img src="images/samba de roda.jpg" alt="Samba de Roda"></div>
     </div>
+
 
     <footer class="page-footer indigo">
         <div class="footer-copyright indigo white-text">

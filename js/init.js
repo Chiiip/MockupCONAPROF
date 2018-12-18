@@ -4,11 +4,12 @@
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
 
-
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
 $(document).ready(function() {
+  $('.modal').modal();
+  $('.modal-trigger').modal();
   function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
