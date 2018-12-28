@@ -1,8 +1,8 @@
 {
-    "name": "CONAPROF",
-    "short_name": "CONAPROF",
-    "theme_color": "#ffab40",
-    "background_color": "#ffab40",
+    "name": "LCB",
+    "short_name": "LCB",
+    "theme_color": "#1e88e5",
+    "background_color": "#1e88e5",
     "display": "browser",
     "scope": "/",
     "start_url": "/"

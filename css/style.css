@@ -123,12 +123,12 @@ footer.page-footer {
   color: #4a148c;
 }
 
-.nomeConaprof {
+.nomeLCB {
   text-align: center;
   margin: auto;
 }
 
-.textoConaprof {
+.textoLCB {
   font-size: 1.2rem;
   text-align: justify;
 }
@@ -178,7 +178,7 @@ footer.page-footer {
   margin-top: -30px;
 }
 
-.form-email-conaprof input {
+.form-email-LCB input {
   font-size: 20px;
 }
 
