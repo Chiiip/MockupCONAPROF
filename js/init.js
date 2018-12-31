@@ -57,3 +57,11 @@ $(document).ready(function() {
 
   });
 });
+
+
+function initMap() {
+  var salvador = {lat: -12.9704, lng: -38.5124};
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: salvador, gestureHandling: 'greedy'});
+  var marker = new google.maps.Marker({position: salvador, map: map});
+}

@@ -91,6 +91,7 @@ footer.page-footer {
 }
 
 
+/* BANNER DO TOPO */
 .letra-s {
   color: #004cff;
 }
@@ -145,10 +146,6 @@ footer.page-footer {
   text-align: center;
 }
 
-.about {
-  background-image: linear-gradient(orange, #ffab91);
-}
-
 .card-info {
   padding-top: 0;
   position: unset;
@@ -185,6 +182,64 @@ footer.page-footer {
 .button-wrapper {
   display: flex;
   justify-content: center;
+}
+
+/* CARDS DOO CURSO */
+.cards-curso {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cards-curso div.card {
+  width: 33.3%;
+}
+
+.card-branco {
+  background-color: white;
+}
+
+.card-vermelho {
+  background-color: #c8140a;
+}
+
+.card-azul {
+  background-color: #0a14c8;
+}
+
+@media only screen and (max-width : 600px) {
+    .cards-curso div.card {
+      width: 100%;
+    }
+
+    .cards-curso {
+      flex-direction: column;
+    }
+}
+
+/* Mapa do Google */
+#map {
+    width: 50%;
+    margin: 20px auto;
+    height: 400px;
+    background-color: grey;
+}
+
+#map-container {
+  padding: 20px;
+  background-color: transparent;
+  width: 100%;
+}
+
+@media only screen and (max-width : 800px) {
+  #map {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #map {
+    width: 100%;
+  }
 }
 
 /* Fonts */

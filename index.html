@@ -111,62 +111,36 @@
         <div class="parallax"><img src="images/capoeira.jpg" alt="Roda de Capoeira"></div>
     </div>
 
-    <div class="numbers">
-        <div class="container scroll-animations crete">
-            <h2 class="text-center orange-text">LCB em números</h2>
-            <div class="section">
-                <div class="row">
-                    <div class="col s12 m4 m4-custom hidden">
-                        <div class="icon-block text-center">
-                            <i class="material-icons large">location_city</i>
-                            <div class="divNumeros">
-                                <span id="cidades" value="23" class="count-up"></span> cidades
+    <div class="cards">
+        <div class="scroll-animations crete">
+                <div class="cards-curso">
+                        <div class="card card-azul no-margin">
+                            <div class="card-content white-text">
+                                <span class="card-title text-center">Card 1</span>
+                                <p class="texto-card">Texto 1</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col s12 m4 m4-custom hidden">
-                        <div class="icon-block text-center">
-                            <i class="material-icons large">account_box</i>
-                            <div class="divNumeros">
-                                <span id="estudantes" value="600" class="count-up"></span> intercambistas
+                        <div class="card card-vermelho no-margin">
+                            <div class="card-content white-text">
+                                <span class="card-title text-center">Card 1</span>
+                                <p class="texto-card">Texto 1</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col s12 m4 m4-custom hidden">
-                        <div class="icon-block text-center">
-                            <i class="material-icons large">school</i>
-                            <div class="divNumeros">
-                                <span id="divCasas" value="50" class="count-up"></span> instituições de ensino
+                        <div class="card card-branco no-margin">
+                            <div class="card-content white-text">
+                                <span class="card-title text-center">Card 1</span>
+                                <p class="texto-card">Texto 1</p>
                             </div>
                         </div>
-                    </div>
                 </div>
-            </div>
         </div>
     </div>
 
     <div class="parallax-container valign-wrapper">
-        <div class="no-pad-bot card-info">
-            <div class="row row-card-info">
-                <div class="col s12 m6 no-margin">
-                    <div class="card deep-orange">
-                        <div class="card-content white-text">
-                            <span class="card-title text-center">Possui alguma dúvida?</span>
-                            <p class="texto-card">Entre em contato conosco e poderemos tirar todas as suas dúvidas!
-                                Baseado nas suas preferências e necessidades, iremos indicar o melhor programa de
-                                intercâmbio que se ajusta ao seu perfil.</p>
-                        </div>
-                        <div class="card-action text-center">
-                            <a data-target="modal1" id="download-button" class="btn-large waves-effect waves-light indigo lighten-1">Tire
-                                suas dúvidas</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="parallax"><img src="images/samba de roda.jpg" alt="Samba de Roda"></div>
+        <div id="map-container">
+        <div id="map"></div>
+        </div>
     </div>
 
 
@@ -183,6 +157,9 @@
     <script src="js/countUp.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS-eVbtT3Ncw8ZV2DxSPu-w9qIjxBzmcg&callback=initMap">
+    </script>
 
 </body>
 
