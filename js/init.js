@@ -20,9 +20,24 @@ $(document).ready(function() {
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
   }
 
+  function isScrolledIntoView2(elem) {
+    let elemTop = elem.offsetTop;
+    let elemBottom = elemTop + $(elem).height();
+    let viewportTop = window.scrollY;
+    let viewportBottom = viewportTop + window.innerHeight;
+    const retorno = !(elemBottom > viewportTop && elemTop < viewportBottom);
+    return retorno;
+  }
+
   $('.scroll-animations .animated').each(function() {
     if (isScrolledIntoView(this) === true) {
       $(this).addClass('fadeIn');
+    }
+  });
+
+  $('.scroll-animations-left .animated').each(function() {
+    if (isScrolledIntoView2(this) === true) {
+      $(this).addClass('fadeInLeft slow');
     }
   });
 
@@ -41,6 +56,12 @@ $(document).ready(function() {
     $('.scroll-animations .animated').each(function() {
       if (isScrolledIntoView(this) === true) {
         $(this).addClass('fadeIn');
+      }
+    });
+
+    $('.scroll-animations-left .animated').each(function() {
+      if (isScrolledIntoView2(this) === true) {
+        $(this).addClass('fadeInLeft slow');
       }
     });
 

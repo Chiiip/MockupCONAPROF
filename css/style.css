@@ -124,6 +124,10 @@ footer.page-footer {
   color: #4a148c;
 }
 
+.divLetrasTitulo {
+  padding-bottom: 30px;
+}
+
 .nomeLCB {
   text-align: center;
   margin: auto;
@@ -136,6 +140,18 @@ footer.page-footer {
 
 .crete {
   font-family: CreteRound;
+}
+
+.archivo {
+  font-family: Archivo;
+}
+
+.amatic {
+  font-family: Amatic;
+}
+
+.baloo {
+  font-family: Baloo;
 }
 
 .divNumeros {
@@ -170,11 +186,6 @@ footer.page-footer {
   text-align: justify;
 }
 
-.parceiros {
-  margin-bottom: 70px;
-  margin-top: -30px;
-}
-
 .form-email-LCB input {
   font-size: 20px;
 }
@@ -184,7 +195,16 @@ footer.page-footer {
   justify-content: center;
 }
 
-/* CARDS DOO CURSO */
+.primeira-capital span {
+  
+}
+
+#titulo-primeira-capital {
+  margin: -75px 0 0 0;
+  font-weight: bold;
+}
+
+/* CARDS DO CURSO */
 .cards-curso {
   display: flex;
   justify-content: space-evenly;
@@ -194,8 +214,8 @@ footer.page-footer {
   width: 33.3%;
 }
 
-.card-branco {
-  background-color: white;
+.card-verde {
+  background-color: #54c2a5;
 }
 
 .card-vermelho {
@@ -262,4 +282,25 @@ footer.page-footer {
   src: url('../fonts/Ubuntu-R.ttf');
   /* - Copyright Dalton Maag Ltd. Licensed under SIL OPEN FONT LICENSE Version 1.0
      - See license text at https://www.fontsquirrel.com/license/ubuntu */
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('../fonts/Archivo-Regular.ttf');
+  /* - Copyright Omnibus Type. Licensed under SIL OPEN FONT LICENSE Version 1.10
+     - See license text at https://www.fontsquirrel.com/license/archivo */
+}
+
+@font-face {
+  font-family: 'Amatic';
+  src: url('../fonts/Amatic.ttf');
+  /* - Copyright Vernon Adams. Licensed under SIL OPEN FONT LICENSE Version 1.10
+     - See license text at https://www.fontsquirrel.com/license/amatic */
+}
+
+@font-face {
+  font-family: 'Baloo';
+  src: url('../fonts/Baloo-Regular.ttf');
+  /* - Copyright EK Type. Licensed under SIL OPEN FONT LICENSE Version 1.10
+     - See license text at https://www.fontsquirrel.com/license/baloo */
 }
