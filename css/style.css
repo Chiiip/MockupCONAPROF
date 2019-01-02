@@ -195,13 +195,27 @@ footer.page-footer {
   justify-content: center;
 }
 
-.primeira-capital span {
-  
+#brasil {
+  color: #54c2a5;
+}
+
+.primeira {
+  color: black;
+}
+
+.primeira-capital {
+  text-align: justify;
 }
 
 #titulo-primeira-capital {
   margin: -75px 0 0 0;
   font-weight: bold;
+}
+
+#texto-salvador {
+  width: 100%;
+  font-size: 20px;
+  white-space: pre-line;
 }
 
 /* CARDS DO CURSO */
