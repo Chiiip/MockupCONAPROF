@@ -41,6 +41,12 @@ $(document).ready(function() {
     }
   });
 
+  $('.scroll-animations-left .animatedRight').each(function() {
+    if (isScrolledIntoView2(this) === true) {
+      $(this).addClass('fadeInRight slow');
+    }
+  });
+
   $('.count-up').each(function() {
     if (isScrolledIntoView(this) === true) {
     const valor = $(this).attr("value");
@@ -62,6 +68,12 @@ $(document).ready(function() {
     $('.scroll-animations-left .animated').each(function() {
       if (isScrolledIntoView2(this) === true) {
         $(this).addClass('fadeInLeft slow');
+      }
+    });
+
+    $('.scroll-animations-left .animatedRight').each(function() {
+      if (isScrolledIntoView2(this) === true) {
+        $(this).addClass('fadeInRight slow');
       }
     });
 

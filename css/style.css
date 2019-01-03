@@ -91,6 +91,13 @@ footer.page-footer {
 }
 
 
+@media only screen and (max-width : 660px) {
+#porque-bahia {
+  width: 100%;
+}
+}
+
+
 /* BANNER DO TOPO */
 .letra-s {
   color: #004cff;
@@ -213,10 +220,26 @@ footer.page-footer {
 }
 
 #texto-salvador {
-  width: 100%;
+  width: 55%;
   font-size: 20px;
-  white-space: pre-line;
+  line-height: 20pt;
+  text-align: justify;
+  margin-bottom: -30%;
+  margin-left: 80%;
 }
+
+@media only screen and (max-width : 992px) {
+#texto-salvador {
+  margin-left: 60%;
+}
+}
+
+@media only screen and (max-width : 600px) {
+  #texto-salvador {
+    margin-left: 40%;
+  }
+  }
+  
 
 /* CARDS DO CURSO */
 .cards-curso {
