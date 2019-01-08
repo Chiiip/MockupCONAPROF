@@ -161,6 +161,10 @@ footer.page-footer {
   font-family: Baloo;
 }
 
+.lato {
+  font-family: Lato;
+}
+
 .divNumeros {
   font-size: 2rem;
 }
@@ -299,6 +303,45 @@ footer.page-footer {
   }
 }
 
+/* NOTICIAS */
+
+.news-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-news {
+  margin: 0 20px;
+}
+.titulo-news {
+  text-align: center;
+}
+
+.tri-box {
+  width: 30%;
+  margin: 10px 15px;
+  padding: 15px;
+  background-color: #023e46;
+}
+
+.tri-box img {
+  width: 100%;
+}
+
+@media only screen and (max-width : 1000px) {
+  .tri-box {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width : 800px) {
+  .tri-box {
+    width: 80%;
+  }
+}
+
+
 /* Fonts */
 @font-face {
   font-family: 'CreteRound';
@@ -340,4 +383,11 @@ footer.page-footer {
   src: url('../fonts/Baloo-Regular.ttf');
   /* - Copyright EK Type. Licensed under SIL OPEN FONT LICENSE Version 1.10
      - See license text at https://www.fontsquirrel.com/license/baloo */
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.ttf');
+  /* - Copyright 	tyPoland Lukasz Dziedzic. Licensed under SIL OPEN FONT LICENSE Version 1.10
+     - See license text at https://www.fontsquirrel.com/license/lato */
 }
