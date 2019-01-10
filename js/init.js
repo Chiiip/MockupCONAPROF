@@ -1,3 +1,10 @@
+
+function renderizarTemperatura(data) {
+  $.get(`http://openweathermap.org/img/w/${data.weather[0].icon}.png`, function( data ) {
+    console.log(data);
+  });
+}
+
 (function($){
   $(function(){
 
@@ -10,6 +17,13 @@
 $(document).ready(function() {
   $('.modal').modal();
   $('.modal-trigger').modal();
+
+  $.get( "https://api.openweathermap.org/data/2.5/weather?q=Salvador,br&appid=933caccadb7cb8c0a6ebbd47718c120e&lang=pt&units=metric", function( data ) {
+    console.log(data);  
+    renderizarTemperatura(data);
+  });
+
+
   function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
@@ -98,3 +112,4 @@ function initMap() {
       document.getElementById('map'), {zoom: 4, center: salvador, gestureHandling: 'greedy'});
   var marker = new google.maps.Marker({position: salvador, map: map});
 }
+
