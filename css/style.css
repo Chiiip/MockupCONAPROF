@@ -145,6 +145,27 @@ footer.page-footer {
   text-align: justify;
 }
 
+#temperatura {
+  position: relative;
+  top: 10px;
+  width: 150px;
+  color: #004cff;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.descricao-temperatura {
+  margin: -20px 0 0 0;
+}
+
+.inner-temperatura {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .crete {
   font-family: CreteRound;
 }
