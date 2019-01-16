@@ -131,6 +131,51 @@ footer.page-footer {
   color: #4a148c;
 }
 
+/* CAROUSEL */
+
+.um {
+  background-image: url(../images/barcos-itapua.jpg);
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.dois {
+  background-image: url(../images/pelourinho-redimensionada.jpg);
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.tres {
+  background-image: url(../images/farol-itapua-redimensionada.jpg);
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.titulo-salvador {
+  bottom: 100px;
+  position: absolute;
+  z-index: 100;
+}
+
+.conheca-salvador {
+  text-align: left;
+  left: 25px;
+  font-size: 80pt;
+  line-height: 85px;
+}
+
+@media only screen and (max-width : 660px) {
+  .conheca-salvador {
+    font-size: 62pt;
+  }
+}
+
+@media only screen and (max-width : 400px) {
+  .conheca-salvador {
+    font-size: 45pt;
+  }
+}
+
 .divLetrasTitulo {
   padding-bottom: 30px;
 }
@@ -184,6 +229,10 @@ footer.page-footer {
 
 .lato {
   font-family: Lato;
+}
+
+.bungee {
+  font-family: Bungee;
 }
 
 .divNumeros {
@@ -280,8 +329,8 @@ footer.page-footer {
   background-color: #54c2a5;
 }
 
-.card-vermelho {
-  background-color: #c8140a;
+.card-azul-marinho {
+  background-color: #00b5ec;
 }
 
 .card-azul {

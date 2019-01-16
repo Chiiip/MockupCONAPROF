@@ -7,11 +7,22 @@ function renderizarTemperatura(data) {
   <p class="descricao-temperatura">${data.weather[0].description}</p>`;
 }
 
+function iniciarRotacaoCarousel() {
+  $('.carousel').carousel('next');
+  setTimeout(iniciarRotacaoCarousel, 5000);
+}
+
 (function ($) {
   $(function () {
 
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: true
+    });
+
+    setTimeout(iniciarRotacaoCarousel, 5000);
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
